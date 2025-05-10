@@ -61,7 +61,7 @@ namespace MF
             const uint32_t nextIndex = m_Index + static_cast<uint32_t>(1UL);
             if (nextIndex < SIZE)
             {
-                if (nextIndex < m_MFBuffer.m_Size)
+                if (nextIndex <= m_MFBuffer.m_Size)
                 {
                     bResult = true;
                     if (TSIZE == 1U)
@@ -91,7 +91,7 @@ namespace MF
             const uint32_t nextIndex = m_Index + static_cast<uint32_t>(2UL);
             if (nextIndex < SIZE)
             {
-                if (nextIndex < m_MFBuffer.m_Size)
+                if (nextIndex <= m_MFBuffer.m_Size)
                 {
                     bResult = true;
                     const uint16_t &lReadValue = reinterpret_cast<const uint16_t&>(m_MFBuffer.m_Buffer[m_Index]);
@@ -124,7 +124,7 @@ namespace MF
             const uint32_t nextIndex = m_Index + static_cast<uint32_t>(4UL);
             if (nextIndex < SIZE)
             {
-                if (nextIndex < m_MFBuffer.m_Size)
+                if (nextIndex <= m_MFBuffer.m_Size)
                 {
                     bResult = true;
                     const uint32_t &lReadValue = reinterpret_cast<const uint32_t&>(m_MFBuffer.m_Buffer[m_Index]);
@@ -157,7 +157,7 @@ namespace MF
             const uint32_t nextIndex = m_Index + static_cast<uint32_t>(8UL);
             if (nextIndex < SIZE)
             {
-                if (nextIndex < m_MFBuffer.m_Size)
+                if (nextIndex <= m_MFBuffer.m_Size)
                 {
                     bResult = true;
                     const uint64_t &lReadValue = reinterpret_cast<const uint64_t&>(m_MFBuffer.m_Buffer[m_Index]);

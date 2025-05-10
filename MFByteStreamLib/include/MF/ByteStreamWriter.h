@@ -61,7 +61,7 @@ namespace MF
             const uint32_t nextIndex = m_Index + static_cast<uint32_t>(1UL);
             if (nextIndex < SIZE)
             {
-                if (nextIndex < m_MFBuffer.m_Size)
+                if (nextIndex <= m_MFBuffer.m_Size)
                 {
                     bResult = true;
                     if (TSIZE == 1U)
@@ -92,7 +92,7 @@ namespace MF
             const uint32_t nextIndex = m_Index + static_cast<uint32_t>(2UL);
             if (nextIndex < SIZE)
             {
-                if (nextIndex < m_MFBuffer.m_Size)
+                if (nextIndex <= m_MFBuffer.m_Size)
                 {
                     bResult = true;
 
@@ -128,7 +128,7 @@ namespace MF
             const uint32_t nextIndex = m_Index + static_cast<uint32_t>(4UL);
             if (nextIndex < SIZE)
             {
-                if (nextIndex < m_MFBuffer.m_Size)
+                if (nextIndex <= m_MFBuffer.m_Size)
                 {
                     bResult = true;
 
@@ -165,7 +165,7 @@ namespace MF
             const uint32_t nextIndex = m_Index + static_cast<uint32_t>(8UL);
             if (nextIndex < SIZE)
             {
-                if (nextIndex < m_MFBuffer.m_Size)
+                if (nextIndex <= m_MFBuffer.m_Size)
                 {
                     bResult = true;
 
